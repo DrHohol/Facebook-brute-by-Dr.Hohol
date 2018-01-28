@@ -4,8 +4,17 @@ For use you need python 3x and modules: termcolor, time, random, requests
 
 python3 FBrute.py
 
-input login
+Select mode (single brute or combo)
 
-input name of wordlist file (example: /root/passlist.txt)
+if you select single bruteforce:
 
-wait...
+Input login and select route to wordlist
+
+Wait...
+
+
+If you select combo mode:
+
+select route to combo file (the file should look like login:password)
+
+Wait...
